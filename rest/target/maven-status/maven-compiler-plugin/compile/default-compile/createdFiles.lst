@@ -1,0 +1,9 @@
+com\mycompany\trafficproject\resources\JakartaEE8Resource.class
+service\RestUserService.class
+service\RestBanqueService.class
+com\mycompany\trafficproject\JakartaRestConfiguration.class
+service\CPT.class
+service\Traffic.class
+service\RestTrafficService.class
+service\TrafficDB.class
+service\User.class

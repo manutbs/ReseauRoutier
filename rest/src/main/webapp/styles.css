@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+ font-family: 'Arial', sans-serif;
+ font-size: 16px;
+ letter-spacing: -0.5px;
+}
+
+/* Traffic Layers Styles */
+#incident-list-wrapper {
+ position: relative;
+ flex: 1;
+}
+
+#incident-list-container {
+ position: absolute;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ right: 0;
+ overflow: auto;
+}
+
+/* Toggle Switch Styles */
+.toggle {
+ display: inline-block;
+ height: 24px;
+ position: relative;
+ width: 48px;
+}
+
+.toggle input {
+ display: none;
+}
+
+.toggle.round {
+ border-radius: 12px;
+}
+
+.toggle.round:before {
+ border-radius: 50%;
+}
+
+.toggle:before {
+ background-color: #fff;
+ bottom: 3px;
+ content: "";
+ height: 18px;
+ left: 3px;
+ position: absolute;
+ transition: 0.2s;
+ width: 18px;
+}
+
+/* Button Styles */
+#bounding-box-button {
+ background-color: #61ADE0;
+ color: #fff;
+ border: none;
+ border-radius: 8px;
+ font: 700 16px/1.2 'Arial', sans-serif;
+ padding: 12px 20px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+#bounding-box-button:hover {
+ background-color: #478cbf;
+}
+
+/* Popup Styles */
+#popup-message {
+ font-family: 'Arial', sans-serif;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+#popup-wrapper {
+ display: block;
+ opacity: 0;
+ transition: opacity 2s;
+}
+
+.popup {
+ position: fixed;
+ top: 50px;
+ right: 50px;
+ width: 450px;
+ height: 50px;
+ color: white;
+}
+
+.popup-info {
+ background-color: #2ecc71;
+}
+
+.popup-error {
+ background-color: #e74c3c;
+}
+
+/* Modal Styles */
+.modal-dialog {
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+}
+
+.modal-content {
+ border-radius: 0;
+ min-height: 99%;
+ background-color: #f8f8f8;
+}
+
+.modal-header {
+ border-bottom: none;
+}
+
+.modal-body {
+ margin: auto;
+ text-align: center;
+ max-width: 25vw;
+}
+
+.modal-body span {
+ color: #777;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+ .container-fluid {
+    flex-direction: column-reverse;
+ }
+
+ .sidebar {
+    max-width: none;
+ }
+}
